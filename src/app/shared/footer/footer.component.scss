@@ -1,0 +1,48 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: #12294E;
+    border-top: 2px solid white;
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        width: 90%;
+        margin: 0% 5%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        p {
+            font-size: 15px;
+            width: 100%;
+            margin: 0;
+            // border-bottom: 1px solid white;
+            span {
+                font-size: 18px;
+            }
+            span:last-child {
+                color: #37B5FF;
+            }
+        }
+    }
+    .copy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        border-top: 1px solid white;
+        width: 90%;
+        margin: 0% 5%;
+        padding: 15px 0px;
+        img {
+            width: 30px;
+            height: 30px;
+        }
+        span {
+            color: white;
+        }
+    }
+}

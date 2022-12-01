@@ -1,0 +1,26 @@
+.scroll-top {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    bottom: 50px;
+    right: 30px;
+    cursor: pointer;
+    background: #12294E;
+    padding: 3px;
+    color: white;
+    transition: all 400ms;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.scroll-top .arriba {
+    position: relative;
+    top: 2px;
+    font-size: 25px;
+}
+
+@media(max-width:650px) {
+    .scroll-top .arriba {
+        font-size: 20px;
+    }
+}

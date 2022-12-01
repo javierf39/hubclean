@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-md">
+    <!-- <div class="container-fluid">
+        
+    </div> -->
+    <a class="navbar-brand" href="#">
+        <img src="assets/img/HUBCLEAN.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+            <li *ngFor="let link of links" class="nav-item">
+                <a href="{{link.enlace}}" class="nav-link" [ngClass]="{select:link.nombre === activo}" (click)="linkActivo($event)">{{link.nombre}}</a>
+            </li>
+        </ul>
+    </div>
+</nav>

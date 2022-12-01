@@ -1,0 +1,77 @@
+.nuestros-servicios {
+    background-color: #37B5FF;
+    min-height: 80vh;
+    width: 100%;
+    border-radius: 0px 20% 8% 15%;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+    .servicios {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        // gap: 10px;
+        width: 90%;
+        margin: 0% 5%;
+        margin-top: 2%;
+        .servicio {
+            cursor: pointer;
+            width: 32%;
+            height: 400px;
+            background: rgba(191, 201, 202, 0.4);
+            border-radius: 10px;
+            padding: 0 !important;
+            transition: all 400ms;
+            img {
+                width: 100%;
+                height: 80%;
+                border-radius: 10px 10px 0px 0px;
+            }
+        }
+        .servicio:hover {
+            transform: scale(1.2);
+            border: 2px solid white;
+        }
+        .limpieza-sanitizacion {
+            margin-top: 4%;
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 2%;
+                li {
+                    list-style: none;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:875px) {
+    .nuestros-servicios {
+        .servicios {
+            gap: 0;
+            .servicio {
+                width: 48%;
+                margin: 1%;
+            }
+        }
+    }
+}
+
+@media(max-width:500px) {
+    .nuestros-servicios {
+        border-radius: 0px;
+        .servicios {
+            gap: 0;
+            .servicio {
+                width: 90%;
+                margin: 5%;
+            }
+            .limpieza-sanitizacion {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+<div class="contacto">
+    <div class="titulos">
+        <h2>Estas interesado en nuestros servicios</h2>
+        <h4>Contacta con nosotros</h4>
+    </div>
+
+    <div class="container contenido">
+
+        <div class="form-contacto">
+            <form #formContacto="ngForm" (ngSubmit)="enviarCorreo(formContacto)">
+                <div class="form-group mb-3 input">
+                    <span>Nombre <i class="bi bi-person-fill icon"></i></span>
+                    <input type="text" class="form-control" name="nombre" #nombre="ngModel" placeholder="(requerido)" [(ngModel)]="correo.name" pattern="[a-zA-Z ]{2,100}" required>
+                    <small class="form-text text-muted validacion" *ngIf="nombre.touched && !nombre.valid">Debe ingresar su nombre</small>
+                </div>
+                <div class="form-group mb-3 input">
+                    <span>Correo <i class="bi bi-envelope icon"></i></span>
+                    <input type="email" class="form-control" name="correo" #email="ngModel" placeholder="(requerido)" [(ngModel)]="correo.email" pattern="[a-z0-9._%+-]+@[a-z]+\.[a-z]{2,4}$" required>
+                    <small class="form-text text-muted validacion" *ngIf="email.touched && !email.valid">Debe ingresar su correo</small>
+                </div>
+                <div class="form-group mb-3 input">
+                    <span>Mensaje <i class="bi bi-chat-right-fill icon"></i></span>
+                    <textarea class="form-control" name="mensaje" rows="3" [(ngModel)]="correo.mensaje"></textarea>
+                </div>
+
+                <button [disabled]="!formContacto.valid" class="btn" type="submit">Enviar</button><br>
+                <div *ngIf="spinner" class="spinner-border text-primary mt-2" role="status">
+                </div>
+            </form>
+        </div>
+        <img src="assets/img/HUBCLEAN.png" alt="">
+    </div>
+</div>

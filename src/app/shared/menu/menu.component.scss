@@ -1,0 +1,43 @@
+$azul_hub:#12294E;
+$celeste_clean:#37B5FF;
+.show {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.select {
+    color: $celeste_clean !important;
+}
+
+.fondoBlanco {
+    background: white !important;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: transparent;
+    padding: 0% 5%;
+    padding-top: 10px;
+    .navbar-brand {
+        img {
+            border-radius: 50%;
+        }
+    }
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                cursor: pointer;
+                color: $azul_hub;
+            }
+            .nav-link:hover {
+                color: $celeste_clean;
+            }
+        }
+    }
+}
+
+@media(max-width:450px) {}

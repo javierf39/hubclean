@@ -1,0 +1,30 @@
+<div class="container equipo">
+    <h2>Team <span>HUB</span><span>CLEAN</span></h2>
+    <div class="team">
+        <div *ngFor="let item of integrantes" class="integrante" (click)="mostrarResponsabilidades(item.nombre)" data-bs-toggle="modal" data-bs-target="#infoEquipo">
+            <img src="{{item.img}}" alt="">
+            <h4>{{item.nombre}}</h4>
+            <p>{{item.especialidad}}</p>
+            <span>{{item.cargo}}</span>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="infoEquipo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLabel">Reponsabilidades</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div *ngFor="let info of infoModal" class="modal-body">
+                <h4>{{info.cargo}}</h4>
+                <ul>
+                    <li *ngFor="let item of info.responsabilidad">{{item}}</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>

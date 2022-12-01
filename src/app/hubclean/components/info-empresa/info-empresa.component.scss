@@ -1,0 +1,30 @@
+.info-empresa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin: 0% 5%;
+    min-height: 70vh;
+    .row:last-child .info h3 {
+        border-bottom: 2px solid #37B5FF;
+    }
+    .info {
+        span:first-child {
+            color: #12294E;
+            font-size: 30px;
+        }
+        span:last-child {
+            color: #37B5FF;
+            font-size: 30px;
+        }
+    }
+}
+
+@media(max-width:800px) {
+    .info-empresa {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

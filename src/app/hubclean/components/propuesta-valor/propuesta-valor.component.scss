@@ -1,0 +1,46 @@
+.propuesta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    margin: 0% 5%;
+    min-height: 80vh;
+    margin-top: 40px;
+    h5 {
+        margin-bottom: 40px;
+    }
+    .contenido {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        .acordion {
+            .accordion-item {
+                p {
+                    text-align: left;
+                }
+            }
+        }
+        .beneficios {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            background: #37B5FF;
+            border-radius: 20px;
+            color: white;
+            padding: 20px;
+            ul {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                li {
+                    list-style: none;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
